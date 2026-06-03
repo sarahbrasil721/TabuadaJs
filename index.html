@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tabuada fácil!</title>
+    <script src="js/scripts.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h2>Digite o número e confirme para gerar a tabuada desejada:</h2>
+    <form id="multiplication-form">
+      <div class="form-control">
+        <label for="number">Tabuada do:</label>
+        <input type="number" id="number" name="number" placeholder="ex: 5" />
+      </div>
+      <div class="form-control">
+        <label for="multiplicator">Multiplicar até:</label>
+        <input
+          type="number"
+          id="multiplicator"
+          name="multiplicator"
+          value="10"
+        />
+      </div>
+      <input type="submit" value="Gerar Tabuada" />
+    </form>
+    <div id="multiplication-table">
+      <!-- A tabuada será gerada aqui -->
+      <h2 id="multiplication-title">Tabuada do número: <span></span></h2>
+      <div id="multiplication-operations">
+        <p>
+          Informe um número para calcular sua tabuada. Assim ela aparecerá
+          abaixo:
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
